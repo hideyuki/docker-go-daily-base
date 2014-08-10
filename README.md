@@ -15,7 +15,7 @@ $ docker build -t hideyuki/go-daily-base:0.1 ./
 # Run
 
 ```
-$ docker run -i -t --name daily hideyuki/go-daily-base:0.1 /bin/bash
+$ docker run -i -t --name daily -p 10022:22 hideyuki/go-daily-base:0.1 /bin/bash
 root@289241d88367:/# 
 ```
 
