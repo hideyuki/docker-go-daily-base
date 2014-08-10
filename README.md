@@ -4,6 +4,8 @@
 
 Docker image of base settings.
 
+This repository connect the [Docker Hub repository](https://registry.hub.docker.com/u/hideyuki/go-daily-base/) for automated build of docker image.
+
 # Build
 
 ```
