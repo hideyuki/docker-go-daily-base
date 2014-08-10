@@ -11,6 +11,7 @@ RUN mkdir -p /var/run/sshd
 RUN useradd -d /home/hide -m -s /bin/bash hide
 RUN mkdir /home/hide/.ssh
 RUN curl -L -k -o /home/hide/.ssh/authorized_keys -O https://dl.dropboxusercontent.com/u/180053/id_rsa.pub
+RUN chown hide:hide -R /home/hide/.ssh
 RUN chmod 600 /home/hide/.ssh/authorized_keys
 RUN echo 'hide ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
