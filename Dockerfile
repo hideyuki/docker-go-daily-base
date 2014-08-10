@@ -26,3 +26,6 @@ ENV PATH $PATH:$GOROOT/bin:$GOPATH/bin
 # Initialzie pluair dirs
 RUN mkdir -p /usr/plugair/app
 
+# Clean up APT when done.
+RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
