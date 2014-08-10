@@ -9,7 +9,13 @@ This repository connect the [Docker Hub repository](https://registry.hub.docker.
 # Build
 
 ```
-$ docker build -t hideyuki/go-daily-base:0.1 ./
+$ docker build --rm -t hideyuki/go-daily-base:0.1 ./
+``` 
+
+With no-cache flag
+
+```
+$ docker build --rm --no-cache -t hideyuki/go-daily-base:0.1 ./
 ``` 
 
 # Run
@@ -25,7 +31,6 @@ Daemon
 
 ```
 $ docker run -d --name daily -p 10022:22 hideyuki/go-daily-base:0.1
-
 ```
 
 
