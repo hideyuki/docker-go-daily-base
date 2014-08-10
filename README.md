@@ -2,24 +2,24 @@
 
 ===
 
-# build
+Docker image for infra layer
+
+# Build
 
 ```
-$ docker build -t hideyuki/go-daily:0.1 ./
+$ docker build -t hideyuki/go-daily-infra:0.1 ./
 ``` 
 
-# run
+# Run
 
 ```
-$ docker run -i -t --name daily hideyuki/go-daily:0.1 /bin/bash
+$ docker run -i -t --name daily hideyuki/go-daily-infra:0.1 /bin/bash
 root@289241d88367:/# 
 ```
 
-# push
-
-Push to Docker Hub
+# Push to Docker Hub
 
 ```
 $ docker login    # if you need
-$ docker push hideyuki/go-dialy:0.1
+$ docker push hideyuki/go-daily-infra:0.1
 ```
