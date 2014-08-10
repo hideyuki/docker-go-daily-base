@@ -2,7 +2,9 @@ FROM ubuntu:14.04
 MAINTAINER Hideyuki Takei <takehide22@gmail.com>
 
 RUN apt-get update
-RUN apt-get install -y curl vim
+RUN apt-get -y upgrade
+
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y install curl vim git mercurial
 
 # ssh
 #RUN apt-get install -y openssh-server
