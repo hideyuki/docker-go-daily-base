@@ -23,3 +23,6 @@ ENV GOROOT /usr/local/go
 ENV GOPATH /usr/plugair/go
 ENV PATH $PATH:$GOROOT/bin:$GOPATH/bin
 
+# Initialzie pluair dirs
+RUN mkdir -p /usr/plugair/app
+
